@@ -1,0 +1,18 @@
+.container{
+    width: 100%;
+    background-color: aliceblue;
+}
+.header{
+    text-align: center;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:#17a2b8;;
+    padding: 20px;
+}
+#intro p{
+    width: 90%;
+    padding: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
