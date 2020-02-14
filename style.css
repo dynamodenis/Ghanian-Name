@@ -1,7 +1,7 @@
 .container{
     width: 100%;
     background-color: aliceblue;
-    height: auto;
+    height: 100%;
 }
 .header{
     text-align: center;
@@ -11,12 +11,17 @@
     padding: 20px;
 }
 #intro p{
-    width: 90%;
+    width: 100%;
     padding: 20px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     text-align: center;
 }
-#footer{
-    margin-bottom: 0px;
+.container footer{
+    position: absolute;
+    text-align: center;
+    margin-top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: aliceblue;
 }
