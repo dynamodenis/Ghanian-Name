@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="bootstrap.css" type="text/css" media="all">
+    <!--link rel="stylesheet" href="bootstrap.css" type="text/css" media="all"-->
     <link rel="stylesheet" href="style.css" type="text/css">
     <title>Ghanian Name</title>
 </head>
@@ -23,15 +23,13 @@
     <div id=form>
         <h1>Fill in Your Date of Birth.</h1>
         <form class=form>
-            <label for="dom">Day of Month</label>
-            <input type="date" id="dombox" >
-            <select >
-                    <option value=true onclick="male()">Male</option>
-                    <option value=true onclick="female()">Female</option>
-            </select>
-            <button type="button" onclick="output()">Try it</button>
-                                                                                                                    
-
+            <label for="dob" id=dob >Date of Birth</label>
+            <input type="date" id="myDate"> 
+            <select>
+                <option onclick="male();">Male</option>
+                <option onclick="female();">Female</option>
+            </select>                                                                                                       
+            <button onclick="btnClick();">Try It</button>
         </form>
     </div>
     <div class=footer>
