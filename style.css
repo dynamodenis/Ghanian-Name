@@ -1,6 +1,7 @@
 .container{
     width: 100%;
     background-color: aliceblue;
+    height: auto;
 }
 .header{
     text-align: center;
@@ -15,4 +16,7 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     text-align: center;
+}
+#footer{
+    margin-bottom: 0px;
 }
