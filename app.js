@@ -1,14 +1,39 @@
-function btnClick(){
-    var da=new Date(document.getElementById('myDate').value);
-    // var cc=da.slice(0,2);
-    // var yy=da.slice(2,4);
-    //var mm=da.slice(5,7);
-    var cc=da.getDate();
-    var mm=da.getMonth();
-    var yy=da.getFullYear(); 
-    //alert(year);
-    alert(cc);
-    alert(mm);
-    alert(yy);
+function getDate(){
+    var day=new Date(document.getElementById("myDate").value);
+    dd=day.getDay();
+    mm=day.getMonth();
+    yy=day.getFullYear();
 }
- 
+
+var dd, mm,yy,malenames,femalenames 
+var Mselected;
+var Fselected;
+
+function male(){
+    Mselected=true;
+}
+function female(){
+    Fselected=true;
+}
+
+function btnClicked(){
+    getDate();
+    if(Mselected===true){
+        Manswer=malenames[dd];
+        alert(Manswer);
+    }
+    else if(Mselected===true){
+        Fselected===true;
+    }
+    else if(Fselected===true){
+        Fanswer= femalenames[dd];
+        alert(Fanswer);
+    }
+    else{
+        Mselected===true;
+    }
+
+}
+   
+malenames=["kwasi","kwadwo","kwabena","kwaku","yaw","kofi","kwame"];
+femalenames=["Akosua","Adwao","Abenaa","Akua","Yaa","Afua","Ama"];
