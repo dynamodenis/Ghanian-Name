@@ -23,15 +23,21 @@
     <div id=form>
         <h1>Fill in Your Date of Birth.</h1>
         <form class=form>
-            <label for="dob" id=dob >Date of Birth</label>
-            <input type="date" id="myDate"> 
-            <select>
-                <option onclick="male();">Male</option>
-                <option onclick="female();">Female</option>
+            <label for="year" >Year of Birth</label>
+            <input type="year" id="year"> 
+            <label for="month">Month of Birth</label>
+            <input type="text" id="month">
+            <label for="day">Day of Birth</label>
+            <input type="text" id="day">
+
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
             </select>                                                                                                       
             <button onclick="btnClick();">Try It</button>
         </form>
     </div>
+    <p id=display></p>
     <div class=footer>
         <footer>
             DEVELOPER: DENIS MBUGUA. <br>
