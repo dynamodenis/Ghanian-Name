@@ -1,27 +1,12 @@
-.container{
+.container-fluid{
     width: 100%;
     background-color: aliceblue;
     height: 100%;
 }
 .header{
-    text-align: center;
-    font-size: 40px;
+    background-color: rgb(44, 165, 125);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color:#17a2b8;;
-    padding: 20px;
 }
-#intro p{
-    width: 100%;
-    padding: 20px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
-    text-align: center;
-}
-.container footer{
-    position: absolute;
-    text-align: center;
-    margin-top: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: aliceblue;
+.card-footer{
+    background-color: rgb(40, 161, 121);
 }
