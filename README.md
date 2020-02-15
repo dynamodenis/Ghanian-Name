@@ -32,3 +32,10 @@ Fell free to contribute or help to make the portfolio module better. Follow the 
 
 Just by any chance you get caught up or the site is not responding to certain results, feel to post your issue [**here**](https://github.com/dynamodenis/Ghanian-Name/issues/new)
 
+## License
+
+---
+By Dynamo Denis Mbugua
+
+License by  [MIT](License.txt)
+
