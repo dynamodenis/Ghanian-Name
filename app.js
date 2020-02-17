@@ -15,7 +15,6 @@ var gender=document.getElementById("gender").value;
 
 var getDate=( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
 getDate=Math.floor(getDate);
-alert(getDate);
 
 /* gender clicked */
 var sex;
