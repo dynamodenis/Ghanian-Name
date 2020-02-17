@@ -1,39 +1,37 @@
-function getDate(){
-    var day=new Date(document.getElementById("myDate").value);
-    dd=day.getDay();
-    mm=day.getMonth();
-    yy=day.getFullYear();
+function btnClick(){
+    var year=document.getElementById('year').value;
+    var MM=parseInt(document.getElementById('month').value);
+    var DD=parseInt(document.getElementById('day').value);
+    var CC=parseInt(year.slice(0,2));
+    var YY=parseInt(year.slice(2,4));
+
+var maleClicked =["Kwasi","Kwado","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+var femaleClicked=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+var gender=document.getElementById("gender").value;
+
+var getDate=( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
+getDate=Math.floor(getDate);
+alert(getDate);
+
+var sex;
+if(gender==="male"){
+    sex= maleClicked;
+}else if(gender==="female"){
+    sex= femaleClicked;
+}else{
+    alert("Insert gender.")
 }
 
-var dd, mm,yy,malenames,femalenames 
-var Mselected;
-var Fselected;
+//set conditions of the values accepted in the text box//
 
-function male(){
-    Mselected=true;
+if(MM<1 || MM>12){
+    alert("Please insert correct month");
 }
-function female(){
-    Fselected=true;
+if(DD<1 || DD>31){
+    alert("Please insert the correct date");
 }
-
-function btnClicked(){
-    getDate();
-    if(Mselected===true){
-        Manswer=malenames[dd];
-        alert(Manswer);
-    }
-    else if(Mselected===true){
-        Fselected===true;
-    }
-    else if(Fselected===true){
-        Fanswer= femalenames[dd];
-        alert(Fanswer);
-    }
-    else{
-        Mselected===true;
-    }
-
+var answer;
+var answer=sex[getDate];
+/*answer=document.getElementsById('answer');*/
+alert("Congratulation your Ghanian name is"  +" "+ answer);
 }
-   
-malenames=["kwasi","kwadwo","kwabena","kwaku","yaw","kofi","kwame"];
-femalenames=["Akosua","Adwao","Abenaa","Akua","Yaa","Afua","Ama"];
