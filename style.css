@@ -10,3 +10,8 @@
 .card-footer{
     background-color: rgb(40, 161, 121);
 }
+.class{
+    position: absolute;
+    margin-bottom: 0;
+
+}

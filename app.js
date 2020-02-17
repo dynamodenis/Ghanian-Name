@@ -5,11 +5,15 @@ function btnClick(){
     var CC=parseInt(year.slice(0,2));
     var YY=parseInt(year.slice(2,4));
 
+    var DOB=[year,MM,DD];
+    DOB.join('/');
+
+
 var maleClicked =["Kwasi","Kwado","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 var femaleClicked=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 var gender=document.getElementById("gender").value;
 
-var getDate=( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7;
+var getDate=( ( (CC/4) - 2 * CC - 1) + ( ( 5 * YY / 4)) + ((26 * (MM + 1 ) / 10)) + DD ) % 7;
 getDate=Math.floor(getDate);
 alert(getDate);
 
@@ -33,5 +37,5 @@ if(DD<1 || DD>31){
 var answer;
 var answer=sex[getDate];
 /*answer=document.getElementsById('answer');*/
-alert("Congratulation your Ghanian name is"  +" "+ answer);
+alert("Congratulation you were born on" +" "+ DOB +" " + "and your Ghanian name is"  +" "+ answer);
 }
